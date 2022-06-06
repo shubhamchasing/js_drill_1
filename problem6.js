@@ -2,7 +2,7 @@ const bMWandAudiCars= (inventory = []) => {
     
     let filteredList =[];
 
-    if (inventory.length === 0 || !inventory){
+    if ( !inventory || inventory.length === 0){
         return [];
     }
 

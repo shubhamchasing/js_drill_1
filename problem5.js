@@ -4,7 +4,7 @@ const carsMadeBefore2000 = (inventory = [],years = []) => {
     const filteredCars = [];
     const carDetails = inventory;
 
-    if (inventory.length === 0 || years.length === 0 || !inventory){
+    if ( !inventory || inventory.length === 0 || years.length === 0 ){
         return []
     }
 

@@ -1,7 +1,7 @@
 const carYears = (inventory = []) => {
     let car;
     let carYearList =[];
-    if (inventory.length === 0 || !inventory){
+    if ( !inventory || inventory.length === 0){
         return []
     }
 
