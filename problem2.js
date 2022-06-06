@@ -4,7 +4,7 @@ const carDetails = (inventory = []) => {
 
     if ( !inventory || inventory.length === 0){
 
-        return [];
+        return {};
     }
 
     lastCar = inventory[inventory.length - 1]

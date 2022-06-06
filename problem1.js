@@ -3,7 +3,7 @@ const carDetails = (inventory = [], id) => {
     let car;
 
     if (!inventory || inventory.length === 0 || !id ) {
-        return [];
+        return {};
     }
 
 
@@ -16,7 +16,7 @@ const carDetails = (inventory = [], id) => {
         }
     }
 
-    return [];
+    return {};
 
 }
 
