@@ -2,7 +2,7 @@ const carDetails = (inventory = [], id) => {
 
     let car;
 
-    if (inventory === undefined || inventory.length === 0 || id === undefined) {
+    if (!inventory || inventory.length === 0 || !id ) {
         return [];
     }
 

@@ -2,7 +2,7 @@ const sortedCarModels = (inventory = []) => {
     let car;
     let carList = [];
 
-    if (inventory.length === 0){
+    if (inventory.length === 0 || !inventory){
         return []
     }
 

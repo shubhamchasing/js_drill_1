@@ -2,7 +2,7 @@ const carDetails = (inventory = []) => {
 
     let lastCar;
 
-    if ( inventory.length === 0){
+    if ( inventory.length === 0 || !inventory){
 
         return [];
     }

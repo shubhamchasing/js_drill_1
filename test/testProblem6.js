@@ -1,7 +1,7 @@
 const bMWandAudiCars = require ("../problem6.js");
 const inventory = require("../cars.js");
 
-const carsList = bMWandAudiCars(inventory);
+const carsList = bMWandAudiCars(undefined);
 
 // cars list in Json
 

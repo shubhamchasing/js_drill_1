@@ -4,7 +4,7 @@ const carsMadeBefore2000 = (inventory = [],years = []) => {
     const filteredCars = [];
     const carDetails = inventory;
 
-    if (inventory.length === 0 || years.length === 0){
+    if (inventory.length === 0 || years.length === 0 || !inventory){
         return []
     }
 
@@ -14,7 +14,7 @@ const carsMadeBefore2000 = (inventory = [],years = []) => {
             filteredCars.push(carDetails[i])
         }
     }
-    
+
     return filteredCars
 }
 module.exports = carsMadeBefore2000;
