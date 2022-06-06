@@ -1,18 +1,12 @@
 const sortedCarModels = (inventory = []) => {
-    let car;
-    let carList = [];
 
     if ( !inventory || inventory.length === 0){
         return []
     }
 
-    for (let i = 0;i < inventory.length; i++) {
-        car = inventory[i];
-        carList.push(car.car_model)
-    }
+    let sortedCar = inventory.sort((a,b) => {return a.car_model.localeCompare(b.car_model)} )
 
-    let sortedCar = carList.sort();
-    
+
     return sortedCar
 
 }
